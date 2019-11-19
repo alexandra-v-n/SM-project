@@ -17,7 +17,11 @@ void loop()
   duration = pulseIn(echoPin, HIGH);
   distance = (duration/2) / 29.1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (distance >= 250 || distance <= 0)
+=======
+  if (distance >= 300 || distance <= 0)
+>>>>>>> 230406312c5b8cd685d61615f8f663fc2f3546d8
 =======
   if (distance >= 200 || distance <= 0)
 >>>>>>> ec4e645312c3c28634f07db8e3f3dfd7efef5f10
