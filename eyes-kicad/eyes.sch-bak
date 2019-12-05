@@ -1,0 +1,233 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Motor:Motor_Servo M1
+U 1 1 5DE6E155
+P 4800 6300
+F 0 "M1" V 4748 6506 50  0000 L CNN
+F 1 "Motor_Servo" V 4839 6506 50  0000 L CNN
+F 2 "" H 4800 6110 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4800 6110 50  0001 C CNN
+	1    4800 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L HC-SR04:HC-SR04 U1
+U 1 1 5DE6C59D
+P 7000 3450
+F 0 "U1" H 7430 3446 50  0000 L CNN
+F 1 "HC-SR04" H 7430 3355 50  0000 L CNN
+F 2 "XCVR_HC-SR04" H 7000 3450 50  0001 L BNN
+F 3 "None" H 7000 3450 50  0001 L BNN
+F 4 "OSEPP Electronics" H 7000 3450 50  0001 L BNN "Field4"
+F 5 "None" H 7000 3450 50  0001 L BNN "Field5"
+F 6 "Multiple Function Sensor Development Tools Ultrasonic Sensor Module" H 7000 3450 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 7000 3450 50  0001 L BNN "Field7"
+F 8 "HC-SR04" H 7000 3450 50  0001 L BNN "Field8"
+	1    7000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L HC-SR04:HC-SR04 U2
+U 1 1 5DE6D770
+P 7000 4450
+F 0 "U2" H 7430 4446 50  0000 L CNN
+F 1 "HC-SR04" H 7430 4355 50  0000 L CNN
+F 2 "XCVR_HC-SR04" H 7000 4450 50  0001 L BNN
+F 3 "None" H 7000 4450 50  0001 L BNN
+F 4 "OSEPP Electronics" H 7000 4450 50  0001 L BNN "Field4"
+F 5 "None" H 7000 4450 50  0001 L BNN "Field5"
+F 6 "Multiple Function Sensor Development Tools Ultrasonic Sensor Module" H 7000 4450 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 7000 4450 50  0001 L BNN "Field7"
+F 8 "HC-SR04" H 7000 4450 50  0001 L BNN "Field8"
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell B1
+U 1 1 5DE6F838
+P 5950 3000
+F 0 "B1" H 6068 3096 50  0001 L CNN
+F 1 "Battery_Cell" H 6068 3050 50  0000 L CNN
+F 2 "" V 5950 3060 50  0001 C CNN
+F 3 "~" V 5950 3060 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5550 4900 6000
+$Comp
+L power:Earth #PWR0101
+U 1 1 5DE724A9
+P 4700 6000
+F 0 "#PWR0101" H 4700 5750 50  0001 C CNN
+F 1 "Earth" H 4700 5850 50  0001 C CNN
+F 2 "" H 4700 6000 50  0001 C CNN
+F 3 "~" H 4700 6000 50  0001 C CNN
+	1    4700 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5DE73123
+P 4800 6000
+F 0 "#PWR0102" H 4800 5850 50  0001 C CNN
+F 1 "+5V" H 4815 6173 50  0000 C CNN
+F 2 "" H 4800 6000 50  0001 C CNN
+F 3 "" H 4800 6000 50  0001 C CNN
+	1    4800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5DE73B44
+P 6800 4350
+F 0 "#PWR0103" H 6800 4200 50  0001 C CNN
+F 1 "+5V" V 6815 4478 50  0000 L CNN
+F 2 "" H 6800 4350 50  0001 C CNN
+F 3 "" H 6800 4350 50  0001 C CNN
+	1    6800 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5DE7417A
+P 6800 3350
+F 0 "#PWR0104" H 6800 3200 50  0001 C CNN
+F 1 "+5V" V 6815 3478 50  0000 L CNN
+F 2 "" H 6800 3350 50  0001 C CNN
+F 3 "" H 6800 3350 50  0001 C CNN
+	1    6800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0105
+U 1 1 5DE748D7
+P 6800 3650
+F 0 "#PWR0105" H 6800 3400 50  0001 C CNN
+F 1 "Earth" H 6800 3500 50  0001 C CNN
+F 2 "" H 6800 3650 50  0001 C CNN
+F 3 "~" H 6800 3650 50  0001 C CNN
+	1    6800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0106
+U 1 1 5DE75523
+P 6800 4650
+F 0 "#PWR0106" H 6800 4400 50  0001 C CNN
+F 1 "Earth" H 6800 4500 50  0001 C CNN
+F 2 "" H 6800 4650 50  0001 C CNN
+F 3 "~" H 6800 4650 50  0001 C CNN
+	1    6800 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13450 2500
+$Comp
+L promicro:ProMicro U3
+U 1 1 5DE772CD
+P 2700 3500
+F 0 "U3" H 2700 4537 60  0000 C CNN
+F 1 "ProMicro" H 2700 4431 60  0000 C CNN
+F 2 "" H 2800 2450 60  0000 C CNN
+F 3 "" H 2800 2450 60  0000 C CNN
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2800 5950 2100
+Wire Wire Line
+	5950 2100 3400 2100
+Wire Wire Line
+	3400 2100 3400 2750
+Wire Wire Line
+	3700 3100 3700 2850
+Wire Wire Line
+	3700 2850 3400 2850
+Wire Wire Line
+	4900 5550 1450 5550
+Wire Wire Line
+	1450 5550 1450 3750
+Wire Wire Line
+	1450 3750 2000 3750
+Wire Wire Line
+	3700 3550 3700 4400
+Wire Wire Line
+	3700 4400 1800 4400
+Wire Wire Line
+	6800 3450 5950 3450
+Wire Wire Line
+	5950 3450 5950 3700
+Wire Wire Line
+	3900 4550 900  4550
+Wire Wire Line
+	900  4550 900  3650
+Wire Wire Line
+	900  3650 2000 3650
+Wire Wire Line
+	1800 4400 1800 3550
+Wire Wire Line
+	1800 3550 2000 3550
+Wire Wire Line
+	4000 4550 4000 4950
+Wire Wire Line
+	4000 4950 1650 4950
+Wire Wire Line
+	1650 4950 1650 3450
+Wire Wire Line
+	1650 3450 2000 3450
+Wire Wire Line
+	1250 3350 2000 3350
+Wire Wire Line
+	5450 4450 5450 5150
+Wire Wire Line
+	6800 4450 5450 4450
+Wire Wire Line
+	5950 3100 3700 3100
+Wire Wire Line
+	5450 5150 4900 5150
+Wire Wire Line
+	4900 5250 4900 5150
+Wire Wire Line
+	4900 5250 1250 5250
+Wire Wire Line
+	1250 3350 1250 5250
+Wire Wire Line
+	6800 4550 4000 4550
+Wire Wire Line
+	5950 3700 3900 3700
+Wire Wire Line
+	3900 3700 3900 4550
+Wire Wire Line
+	3700 3550 6800 3550
+NoConn ~ 3400 2950
+NoConn ~ 3400 3050
+NoConn ~ 3400 3150
+NoConn ~ 3400 3250
+NoConn ~ 3400 3350
+NoConn ~ 3400 3450
+NoConn ~ 3400 3550
+NoConn ~ 3400 3650
+NoConn ~ 3400 3750
+NoConn ~ 3400 3850
+NoConn ~ 2000 3850
+NoConn ~ 2000 3250
+NoConn ~ 2000 3150
+NoConn ~ 2000 3050
+NoConn ~ 2000 2950
+NoConn ~ 2000 2850
+NoConn ~ 2000 2750
+$EndSCHEMATC
