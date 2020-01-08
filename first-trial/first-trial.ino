@@ -10,6 +10,8 @@ NewPing sonar( TRIGGER_PIN, ECHO_PIN,MAX_DISTANCE);
 float distance;
 long duration;
 int iterations = 5;
+
+
 void setup() {
   Serial.begin(9600);
   pinMode( TRIGGER_PIN, OUTPUT);
