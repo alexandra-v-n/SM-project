@@ -22,6 +22,7 @@ void setup() {
 
 void loop() {
 
+// INITIAL CODE FOR THE ULTRASONIC SENSOR
 //  distance = sonar.ping_cm();
 // Serial.print("Distance =  ");
 // if ( distance >= 400 || distance <= 2){
